@@ -3,12 +3,45 @@
     <div class="barraLateral">
       <div class="logoShoes row">
         <h1 class="row">
-          <a class="col-9" href="#">Shoes Couture Bussiness</a>
+          <a class="col-9" [routerLink]="['/inicio']">Shoes Couture Bussiness</a>
         </h1>
       </div>
-      
+      <nav>
+        <div class="navItems row">
+          <ul class="col-12">
+            <a class="navbar-brand" [routerLink]="['/inicio']">
+              <img src="../assets/logo/logo-home-trasparet.png" width="20" height="20" alt="">
+            </a>
+            <a class="navsSelectors" [routerLink]="['/inicio']">
+              Inicio
+            </a>
+          </ul>
+        </div>
+        <div class="navItems row">
+          <ul class="col-12">
+            <a class="navbar-brand" [routerLink]="['/inventario']">
+              <img src="../assets/logo/logo-inventario-trasparent.png" width="20" height="20" alt="">
+            </a>
+            <a class="navsSelectors" [routerLink]="['/inventario']">
+              Inventario
+            </a>
+          </ul>
+        </div>
+        <div class="navItems row">
+          <ul class="col-12">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/logo/logo-ventas-trasparent.png" width="20" height="20" alt="">
+            </a>
+            <a class="navsSelectors" href="#">
+              Ventas
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container" id="prueba">
+      <router-outlet></router-outlet>
     </div>
 
-    <div</div>
   </div>
 </div>
